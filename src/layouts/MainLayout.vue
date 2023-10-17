@@ -9,12 +9,11 @@
           class="bg-white text-grey "
           :breakpoint="0"
         >
-        <q-tab name="mails" icon="mail" />
-        <q-tab name="alarms" icon="alarm" />
-        <q-tab name="movies" icon="movie" />
-        <q-tab name="home" icon="movie" />
-        <q-tab name="chat" icon="movie" />
-
+        <q-tab name="chat" icon="chat" />
+        <q-tab name="history" icon="receipt" />
+        <q-tab name="home" icon="home" @click="$router.push('/')"/>
+        <q-tab name="notification" icon="notifications" />
+        <q-tab name="profile" icon="person" />
         </q-tabs>
     </q-footer>
     <q-page-container>
@@ -29,7 +28,7 @@ export default defineComponent({
   name: 'MainLayout',
   setup () {
     return {
-      tab: ref('mails')
+      tab: ref('home')
     }
   }
 })
