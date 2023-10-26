@@ -1,7 +1,7 @@
 <template>
   <q-card flat class="my-card q-my-sm bg-grey-2">
     <q-card-section>
-      <q-btn class="q-ml-sm" unelevated dense color="primary" icon="tune" />
+      <q-btn class="q-ml-sm" unelevated dense color="primary" :icon="icon" />
     </q-card-section>
     <q-item>
       <q-item-section>
